@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { OverlayScrollbars } from 'overlayscrollbars';
 import 'overlayscrollbars/overlayscrollbars.css';
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  Terminal, 
-  Code2, 
-  BrainCircuit, 
-  Layout, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Terminal,
+  Code2,
+  BrainCircuit,
+  Layout,
   ExternalLink,
   Cpu,
   Moon,
@@ -176,7 +176,7 @@ function HeroSection() {
           Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-cyan-500 dark:from-emerald-400 dark:to-cyan-400">Murilo</span>.
         </h1>
         <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 max-w-2xl mb-10 leading-relaxed">
-          Computer Science student building intelligent systems. 
+          Computer Science student building intelligent systems.
           Specializing in <span className="text-zinc-900 dark:text-zinc-200 font-medium">AI Engineering</span> and <span className="text-zinc-900 dark:text-zinc-200 font-medium">Full Stack Development</span>.
         </p>
         <div className="flex flex-wrap items-center gap-4">
@@ -263,9 +263,7 @@ function ProjectsSection() {
                     </span>
                   ))}
                 </div>
-                <a href={project.link} className="inline-flex items-center gap-2 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors mt-auto">
-                  View Source <ExternalLink className="w-4 h-4" />
-                </a>
+
               </div>
             </GlowCard>
           ))}
