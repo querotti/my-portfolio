@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
+// @ts-ignore
 import { OverlayScrollbars } from 'overlayscrollbars';
 import 'overlayscrollbars/overlayscrollbars.css';
 import {
@@ -13,7 +14,8 @@ import {
   ExternalLink,
   Cpu,
   Moon,
-  Sun
+  Sun,
+  MessageSquare
 } from 'lucide-react';
 
 function ThemeToggle() {
@@ -90,6 +92,13 @@ const PROJECTS = [
     description: "A modern, responsive portfolio website built to showcase my skills and experience. Developed using React, Tailwind CSS, and Framer Motion, featuring a dark 'technical dashboard' aesthetic with smooth scroll animations.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
     icon: <Code2 className="w-6 h-6" />,
+    link: "https://github.com/querotti"
+  },
+  {
+    title: "WhatsApp Messaging Bot",
+    description: "An automated WhatsApp chatbot designed to send targeted messages directly to contacts. Built to streamline communication and automate messaging workflows efficiently.",
+    tags: ["Node.js", "WhatsApp Web.js", "JavaScript", "Automation"],
+    icon: <MessageSquare className="w-6 h-6" />,
     link: "https://github.com/querotti"
   }
 ];
